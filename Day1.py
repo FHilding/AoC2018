@@ -1,4 +1,4 @@
-myfile = open('day1data.txt', 'r')
+myfile = open('data/day1data.txt', 'r')
 contents = myfile.read().strip().split()
 myfile.close()
 

@@ -20,15 +20,11 @@ print(twos*threes)
 
 
 for line in contents:
-    #print(contents2[0])
     for line2 in contents2:
         if line != line2:
             zipped = zip(line, line2)
             differs = [x for x in zipped if x[0]!=x[1]]
-            #print(len(differs))
             if len(differs)==1:
-                #print("DIFFERS")
-                #print(line, line2, differs)
                 same = ''.join([x[0] for x in zip(line, line2) if x[0]==x[1]])
                 print(same)
                 break
